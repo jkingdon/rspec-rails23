@@ -14,6 +14,9 @@ GEM
     activesupport (2.3.18)
     diff-lcs (1.2.4)
     json (1.8.0)
+    metaclass (0.0.1)
+    mocha (0.14.0)
+      metaclass (~> 0.0.1)
     rack (1.1.6)
     rake (10.1.0)
     rdiscount (2.1.6)
@@ -37,6 +40,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  mocha
   rake
   rdiscount
   rspec-rails23!
