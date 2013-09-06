@@ -13,7 +13,7 @@ RSpec::configure do |c|
   end
 
   c.include RSpec::Rails::ModelExampleGroup, :type => :model, :example_group => {
-    :file_path => c.escaped_path(%w[spec model])
+    :file_path => c.escaped_path(%w[spec models])
   }
   c.include RSpec::Rails::ControllerExampleGroup, :type => :controller, :example_group => {
     :file_path => c.escaped_path(%w[spec controllers])

@@ -1,12 +1,6 @@
 require 'active_support/concern'
 require 'rspec/core'
 
-RSpec::configure do |c|
-  c.backtrace_clean_patterns << /vendor\//
-  c.backtrace_clean_patterns << /lib\/rspec\/rails/
-  c.backtrace_clean_patterns << /lib\/rspec\/rails23/
-end
-
 require 'rspec/rails/view_rendering'
 require 'rspec/rails/matchers'
 require 'rspec/rails/example'
