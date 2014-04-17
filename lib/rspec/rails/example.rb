@@ -3,7 +3,7 @@ require 'rspec/rails/example/model_example_group'
 require 'rspec/rails/example/controller_example_group'
 require 'rspec/rails/example/request_example_group'
 #require 'rspec/rails/example/helper_example_group'
-#require 'rspec/rails/example/view_example_group'
+require 'rspec/rails/example/view_example_group'
 #require 'rspec/rails/example/mailer_example_group'
 require 'rspec/rails/example/routing_example_group'
 
@@ -32,7 +32,7 @@ RSpec::configure do |c|
   c.include RSpec::Rails::RoutingExampleGroup, :type => :routing, :example_group => {
     :file_path => c.escaped_path(%w[spec routing])
   }
-  #c.include RSpec::Rails::ViewExampleGroup, :type => :view, :example_group => {
-    #:file_path => c.escaped_path(%w[spec views])
-  #}
+  c.include RSpec::Rails::ViewExampleGroup, :type => :view, :example_group => {
+    :file_path => c.escaped_path(%w[spec views])
+  }
 end
